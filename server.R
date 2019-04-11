@@ -12,6 +12,7 @@ makeReactiveBinding("plot_counter")
 plot_counter <- 0
 
 server <- function(input, output) {
+    observeEvent(input$close,stopApp())
     output$ORDER <- renderTable({
         ORD <- NULL
         if(length(input$CORR1) != 0){
