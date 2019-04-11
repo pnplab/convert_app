@@ -66,8 +66,9 @@ ui <- pageWithSidebar(
                br(),
                a("See Manual",href = "https://github.com/pnplab/psych_corr",
                  target = "_blank"),
+               br(),
                actionButton("close",
-                            "Fermer")
+                            "Close App")
                ),
 
   # Main panel for displaying outputs ----
