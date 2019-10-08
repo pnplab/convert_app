@@ -1,11 +1,16 @@
-# SANS/SAPS and PANSS score converter
-![](Capture.PNG){width=1000px}
-
-## How to make a correspondance between SANS/SAPS and PANSS score
 
 
-### Step 1: Choose the correspondence needed. 
-![](Step1.PNG){width=400px}
+# PANSS and SAPS/SANS (sub)scores converter
+
+This Shiny app (http://shiny.rstudio.com) converts scores between the Positive and Negative Syndrome Scale (PANSS; Kay et al., 1987, Schizophr Bull, 13: 261-276) and the Scale for the Assessment of Positive Symptoms or Scale for the Assessment of Negative Symptoms (SAPS/SANS; Andreasen, 1984, 1983, University of Iowa). Beyond mere conversions for global positive and negative symptoms severity scores, the app allows converting positive (delusions, disorganization, hallucinations) and negative (amotivation, expressivity, cognition) subscores between scales, as described in Grot et al, 2019, PsychArXiv (doi:???).   
+
+![](Capture.PNG)
+
+## Procedure
+
+
+### Step 1: Choose which conversions are needed. 
+![](Step1.PNG)
 
 ### Step 2: Check the order of input variables.
 ![](Step2.PNG)
