@@ -1,8 +1,7 @@
 ###     -*- Coding: utf-8 -*-          ###
-### Analyste Charles-Edouard Giguere   ###
+### Analyst Charles-Edouard Giguere   ###
 
-### Shiny application for the article: correspondance between the
-### SANS/SAPS and the PANSS.
+### Shiny application for the article "Converting scores between the PANSS and SAPS/SANS beyond the positive/negative dichotomy" (Grot et al, 2019, PsychArXiv).
 
 ### User interface side. 
 
@@ -11,20 +10,20 @@ require(shinyjs)
 ui <- pageWithSidebar(
 
   # App title ----
-  headerPanel("SAPS/SANS PANSS SCORE CONVERTER"),
+  headerPanel("SCORE CONVERTER"),
 
   # Sidebar panel for inputs ----
   sidebarPanel(width = 4,
                fluidRow(
                    column(3,
-                          img(src = "26682017.png",width = "100px")
+                          img(src = "pnp.png",width = "100px")
                           ),
                    column(9, h3("PNP LAB"),                         
                           h4("Predictive Neuroimaging in Psychiatry Lab")
                           )
                ),
                selectInput("CORR1",
-                           label = "CORRESPONDANCE(CHECK ALL CORRESPONDANCE NEEDED)",
+                           label = "CONVERSION: choose which scores to convert",
                            multiple = TRUE,
                            choices = c("PANSS_negative => SANS_composite",      
                                        "SANS_composite => PANSS_negative", 
@@ -37,25 +36,25 @@ ui <- pageWithSidebar(
                                        "PANSS_positive => SAPS_summary", 
                                        "SAPS_summary => PANSS_positive", 
                                        "SAPS_summary => SAPS_composite", 
-                                       "SAPS_composite => SAPS_summary", 
-                                       "PANSS_neg_it8_10_13 => SANS_neg_it8_13",
-                                       "SANS_neg_it8_13 => PANSS_neg_it8_10_13",
-                                       "PANSS_neg_it9_11 => SANS_neg_it17_22", 
-                                       "SANS_neg_it17_22 => PANSS_neg_it9_11", 
-                                       "PANSS_neg_it12 => SANS_neg_it25", 
-                                       "SANS_neg_it25 => PANSS_neg_it12", 
-                                       "PANSS_pos_it1_5_6_7 => SAPS_pos_it_20", 
-                                       "SAPS_pos_it_20 => PANSS_pos_it1_5_6_7", 
-                                       "PANSS_pos_it2 => SAPS_pos_it_25_34", 
-                                       "SAPS_pos_it_25_34 => PANSS_pos_it2", 
-                                       "PANSS_pos_it_3 => SAPS_pos_it_7", 
-                                       "SAPS_pos_it_7 => PANSS_pos_it_3")),
+                                       "SAPS_composite => SAPS_summary",
+				       "PANSS_delusions => SAPS_delusions", 
+                                       "SAPS_delusions => PANSS_delusions", 
+                                       "PANSS_disorganization => SAPS_disorganization", 
+                                       "SAPS_disorganization => PANSS_disorganization", 
+                                       "PANSS_hallucinations => SAPS_hallucinations", 
+                                       "SAPS_hallucinations => PANSS_hallucinations", 
+                                       "PANSS_amotivation => SANS_amotivation",
+                                       "SANS_amotivation => PANSS_amotivation",
+                                       "PANSS_expressivity => SANS_expressivity", 
+                                       "SANS_expressivity => PANSS_expressivity", 
+                                       "PANSS_cognition => SANS_cognition", 
+                                       "SANS_cognition => PANSS_cognition")),
                checkboxInput("fl",
                              label = "Ignore First line",
                              value = FALSE
                ),
                fileInput("FIN",
-                         "INPUT FILE (COLUMNS MUST BE IN ORDER OF CORRESPONDANCE)",
+                         "INPUT: select file (beware columns must be in the same order as given in CONVERSION)",
                          accept=c('text/csv',
                                   'text/comma-separated-values,text/plain',
                                   '.csv')

@@ -1,13 +1,12 @@
 ###     -*- Coding: utf-8 -*-          ###
-### Analyste Charles-Edouard Giguere   ###
+### Analyst Charles-Edouard Giguere   ###
 
-### Shiny application for the article: correspondance between the SANS/SAPS and
-### the PANSS.
+### Shiny application for the article "Converting scores between the PANSS and SAPS/SANS beyond the positive/negative dichotomy" (Grot et al, 2019, PsychArXiv).
 
 ### Server side. 
 
 options(stringsAsFactors = FALSE)
-cor.df <- read.csv("./RES.COR.csv")
+cor.df <- read.csv("./equations.csv")
 makeReactiveBinding("plot_counter") 
 plot_counter <- 0
 
