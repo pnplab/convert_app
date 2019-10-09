@@ -4,7 +4,8 @@
 
 This Shiny app (http://shiny.rstudio.com) converts scores between the Positive and Negative Syndrome Scale (PANSS; Kay et al., 1987, Schizophr Bull, 13: 261-276) and the Scale for the Assessment of Positive Symptoms or Scale for the Assessment of Negative Symptoms (SAPS/SANS; Andreasen, 1984, 1983, University of Iowa). Beyond mere conversions for global positive and negative symptoms severity scores, the app allows converting positive (delusions, disorganization, hallucinations) and negative (amotivation, expressivity, cognition) subscores between scales, as described in Grot et al, 2019, PsychArXiv (doi:???).  
 
-Interactive conversion equations are available in the software R through the Shiny package (**_install.packages("shiny")_** and **_install.packages("shinyjs")_**). Equations are accessible using the following command line: **_shiny::runGitHub("pnplab/convert_app")_** 
+Interactive conversion equations are available in the software R through the Shiny package: **_install.packages("shiny")_** and **_install.packages("shinyjs")_**. Scores conversion between scales will be performed using the following command line: **_shiny::runGitHub("pnplab/convert_app")_**.
+
 
 ![](Capture.PNG)
 
