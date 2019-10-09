@@ -111,7 +111,3 @@ server <- function(input, output) {
     
 }
 
-
-### Debug help values.
-### in.df <- read.csv("./PANSS_2_input.csv")
-### input  <- list(CORR1 = c("PANSS_negative => SANS_composite", "PANSS_positive => SAPS_composite"))
