@@ -21,7 +21,7 @@ Interactive conversion equations are available in the software R through the Shi
 
 ## (Sub)scores computation   
 
-**PANSS Positive symptoms**
+**PANSS Positive symptoms** <br/>
 PANSS_positive = mean(PANSS01-PANSS07)
 PANSS_delusions = mean(PANSS01, PANSS05 - PANSS07) 
 PANSS_disorganization = PANSS02
@@ -49,7 +49,7 @@ SANS_cognition = SANS25
 
 ## Regression coefficients
 
-PANSS_positive		=	1.499	+	1.079	*	SAPS_composite
+PANSS_positive		=	1.499	+	1.079	*	SAPS_composite<br/>
 PANSS_positive		=	1.325	+	0.631	*	SAPS_summary
 PANSS_negative		=	1.016	+	0.962	*	SANS_composite
 PANSS_negative		=	0.953	+	0.753	*	SANS_summary
