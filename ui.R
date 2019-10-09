@@ -10,7 +10,7 @@ require(shinyjs)
 ui <- pageWithSidebar(
 
   # App title ----
-  headerPanel("SCORE CONVERTER"),
+  headerPanel("PANSS - SAPS/SANS scores converter"),
 
   # Sidebar panel for inputs ----
   sidebarPanel(width = 4,
