@@ -7,16 +7,16 @@ This Shiny app (http://shiny.rstudio.com) converts scores between the Positive a
 Interactive conversion equations are available in the software R through the Shiny package: **_install.packages("shiny")_** and **_install.packages("shinyjs")_**. Scores conversion between scales will be performed using the following command line: **_shiny::runGitHub("pnplab/convert_app")_**.
 
 
-![](Capture.PNG)
+![](interface.png)
 
 ## Procedure
 
 
 ### Step 1: Choose which conversions are needed. 
-![](Step1.PNG)
+
 
 ### Step 2: Check the order of input variables.
-![](Step2.PNG)
+
 
 
 ### Step 3: 
@@ -25,17 +25,17 @@ Interactive conversion equations are available in the software R through the Shi
 
 ### 2. Check the `Ignore First Line` check box if you have names header at the top of your input file so the app can skip the first line. 
 	
-![](Step3.PNG)
+
 
 ### At this point you will see the correspondance requested appears on the right of the screen. 
 
 ### You can toggle between plot to see all graphical representation of correspondance. 
 
-![](Capture_plot.PNG)
+
 
 ### Step 4: The correspondance can be downloaded as a new csv file. 
 
-![](Step4.PNG)
+
 
 
 ### This is how scores were calculated: 
