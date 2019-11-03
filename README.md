@@ -14,7 +14,7 @@ Interactive conversion equations are available in the software R through the Shi
 
 1. Choose all conversions you wish to perform by selecting from the list of possible options, either from PANSS to SAPS/SANS or SAPS/SANS to PANSS, and either for total positive/negative scores or subscores (delusions, disorganization, hallucinations, amotivation, expressivity, cognition).
 
-2. Select a csv (comma separated variables) input file that has the same number of columns than the number of input variables. Moreover, make sure that the order of columns must be in the exact same order as the list of input variables. Check the `Ignore First Line` check box if you have names header at the top of your input file so the app can skip the first line.
+2. Select a csv (comma separated variables) input file that has the same number of columns than the number of input variables. Note the order of columns must be in the exact same order as the list of input variables. Check the `Ignore First Line` check box if you have names header at the top of your input file so the app can skip the first line.
 
 3. The requested converted scores will appear in a table at the right of the interface. The first columns are the input variables while the last columns provide the output variables. You can toggle between plots to visualize graphical representations of the conversions. A larger circle reflects an increased proportion of subjects with a given score. Converted scores can be downloaded as a new csv file with `Download the output file`.
 
