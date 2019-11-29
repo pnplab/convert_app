@@ -34,7 +34,7 @@ PANSS_expressivity = mean(PANSS09, PANSS11) <br/>
 PANSS_cognition = mean(PANSS12) <br/>
 	
 **SAPS Positive symptoms** <br/>
-SAPS_total = mean(SAPS01 - SAPS06, SAPS08 - SAPS19, SAPS21 - SAPS24, SAPS26 - SAPS33)) <br/> 
+SAPS_total = mean(SAPS01 - SAPS06, SAPS08 - SAPS19, SAPS21 - SAPS24, SAPS26 - SAPS33) <br/> 
 SAPS_summary = mean(SAPS07, SAPS20, SAPS25, SAPS34) <br/>
 SAPS_delusions = SAPS20 <br/> 
 SAPS_disorganization = mean(SAPS25, SAPS34) <br/> 
