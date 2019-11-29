@@ -34,14 +34,14 @@ PANSS_expressivity = mean(PANSS09, PANSS11) <br/>
 PANSS_cognition = mean(PANSS12) <br/>
 	
 **SAPS Positive symptoms** <br/>
-SAPS_composite = mean(SAPS01 - SAPS06, SAPS08 - SAPS19, SAPS21 - SAPS24, SAPS26 - SAPS33)) <br/> 
+SAPS_total = mean(SAPS01 - SAPS06, SAPS08 - SAPS19, SAPS21 - SAPS24, SAPS26 - SAPS33)) <br/> 
 SAPS_summary = mean(SAPS07, SAPS20, SAPS25, SAPS34) <br/>
 SAPS_delusions = SAPS20 <br/> 
 SAPS_disorganization = mean(SAPS25, SAPS34) <br/> 
 SAPS_hallucinations = SAPS07 <br/>
 	
 **SANS Negative symptoms** <br/>
-SANS_composite = mean(SANS01 - SANS07, SANS09 - SANS12, SANS14 - SANS16, SANS18 - SANS21, SANS23 - SANS24) <br/>
+SANS_total = mean(SANS01 - SANS07, SANS09 - SANS12, SANS14 - SANS16, SANS18 - SANS21, SANS23 - SANS24) <br/>
 SANS_summary = mean(SANS01, SANS13, SANS17, SANS22, SANS25) <br/>
 SANS_amotivation = mean(SANS08, SANS13) <br/>
 SANS_expressivity = mean(SANS17, SANS22) <br/>
@@ -60,9 +60,9 @@ PANSS_amotivation	=	0.977	+	0.752	*	SANS_amotivation <br/>
 PANSS_expressivity	=	0.698	+	0.843	*	SANS_expressivity <br/>
 PANSS_cognition		=	2.455	+	0.436	*	SANS_cognition <br/>
 
-SAPS_composite		=	-0.543	+	0.528	*	PANSS_positive <br/>
+SAPS_total		=	-0.543	+	0.528	*	PANSS_positive <br/>
 SAPS_summary		=	-0.637	+	0.918	*	PANSS_positive <br/>
-SANS_composite		=	-0.370	+	0.721	*	PANSS_negative <br/>
+SANS_total		=	-0.370	+	0.721	*	PANSS_negative <br/>
 SANS_summary		=	-0.363	+	0.883	*	PANSS_negative <br/>
 SAPS_delusions		=	-0.849	+	1.293	*	PANSS_delusions <br/>
 SAPS_disorganization	=	-0.245	+	0.481	*	PANSS_disorganization <br/>
