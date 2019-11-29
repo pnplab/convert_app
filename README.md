@@ -49,9 +49,9 @@ SANS_cognition = SANS25 <br/>
 
 ## Regression coefficients
 
-PANSS_positive		=	1.499	+	1.079	*	SAPS_composite<br/>
+PANSS_positive		=	1.499	+	1.079	*	SAPS_total<br/>
 PANSS_positive		=	1.325	+	0.631	*	SAPS_summary <br/>
-PANSS_negative		=	1.016	+	0.962	*	SANS_composite <br/>
+PANSS_negative		=	1.016	+	0.962	*	SANS_total <br/>
 PANSS_negative		=	0.953	+	0.753	*	SANS_summary <br/>
 PANSS_delusions		=	1.265	+	0.494	*	SAPS_delusions <br/>
 PANSS_disorganization	=	1.234	+	0.979	*	SAPS_disorganization <br/>
