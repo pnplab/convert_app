@@ -71,7 +71,3 @@ SAPS_hallucinations	=	-0.773	+	0.941	*	PANSS_hallucinations <br/>
 SANS_expressivity	=	-0.541	+	0.907	*	PANSS_expressivity <br/>
 SANS_amotivation	=	0.430	+	0.677	*	PANSS_amotivation <br/>
 SANS_cognition		=	0.492	+	0.329	*	PANSS_cognition <br/>
-
-
-
-
