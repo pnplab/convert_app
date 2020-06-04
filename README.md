@@ -29,8 +29,8 @@ PANSS_hallucinations = PANSS03 <br/>
 		
 **PANSS Negative symptoms** <br/>
 PANSS_negative = mean(PANSS08-PANSS14) <br/>
-PANSS_amotivation = mean(PANSS08, PANSS10, PANSS13) <br/> 
-PANSS_expressivity = mean(PANSS09, PANSS11) <br/>
+PANSS_expressivity = mean(PANSS08, PANSS10, PANSS13) <br/> 
+PANSS_amotivation = mean(PANSS09, PANSS11) <br/>
 PANSS_cognition = mean(PANSS12) <br/>
 	
 **SAPS Positive symptoms** <br/>
@@ -43,8 +43,8 @@ SAPS_hallucinations = SAPS07 <br/>
 **SANS Negative symptoms** <br/>
 SANS_total = mean(SANS01 - SANS07, SANS09 - SANS12, SANS14 - SANS16, SANS18 - SANS21, SANS23 - SANS24) <br/>
 SANS_summary = mean(SANS01, SANS13, SANS17, SANS22, SANS25) <br/>
-SANS_amotivation = mean(SANS08, SANS13) <br/>
-SANS_expressivity = mean(SANS17, SANS22) <br/>
+SANS_expressivity = mean(SANS08, SANS13) <br/>
+SANS_amotivation = mean(SANS17, SANS22) <br/>
 SANS_cognition = SANS25 <br/>
 
 ## Regression coefficients
@@ -56,8 +56,8 @@ PANSS_negative		=	0.953	+	0.753	*	SANS_summary <br/>
 PANSS_delusions		=	1.265	+	0.494	*	SAPS_delusions <br/>
 PANSS_disorganization	=	1.234	+	0.979	*	SAPS_disorganization <br/>
 PANSS_hallucinations	=	1.235	+	0.859	*	SAPS_hallucinations <br/>
-PANSS_amotivation	=	0.977	+	0.752	*	SANS_amotivation <br/>
-PANSS_expressivity	=	0.698	+	0.843	*	SANS_expressivity <br/>
+PANSS_expressivity	=	0.977	+	0.752	*	SANS_expressivity <br/>
+PANSS_amotivation	=	0.698	+	0.843	*	SANS_amotivation <br/>
 PANSS_cognition		=	2.455	+	0.436	*	SANS_cognition <br/>
 
 SAPS_total		=	-0.543	+	0.528	*	PANSS_positive <br/>
@@ -67,8 +67,8 @@ SANS_summary		=	-0.363	+	0.883	*	PANSS_negative <br/>
 SAPS_delusions		=	-0.849	+	1.293	*	PANSS_delusions <br/>
 SAPS_disorganization	=	-0.245	+	0.481	*	PANSS_disorganization <br/>
 SAPS_hallucinations	=	-0.773	+	0.941	*	PANSS_hallucinations <br/>
-SANS_amotivation	=	-0.541	+	0.907	*	PANSS_amotivation <br/>
-SANS_expressivity	=	0.430	+	0.677	*	PANSS_expressivity <br/>
+SANS_expressivity	=	-0.541	+	0.907	*	PANSS_expressivity <br/>
+SANS_amotivation	=	0.430	+	0.677	*	PANSS_amotivation <br/>
 SANS_cognition		=	0.492	+	0.329	*	PANSS_cognition <br/>
 
 

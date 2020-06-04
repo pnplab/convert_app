@@ -6,8 +6,8 @@ PANSS_negative,SANS_summary,0.952964223,0.752778589
 PANSS_delusions,SAPS_delusions,1.26529786,0.493894076
 PANSS_disorganization,SAPS_disorganization,1.233988168,0.978631527
 PANSS_hallucinations,SAPS_hallucinations,1.235028712,0.858955428
-PANSS_amotivation,SANS_amotivation,0.976965014,0.751951735
-PANSS_expressivity,SANS_expressivity,0.698493591,0.843377101
+PANSS_expressivity,SANS_amotivation,0.976965014,0.751951735
+PANSS_amotivation,SANS_expressivity,0.698493591,0.843377101
 PANSS_cognition,SANS_cognition,2.454529212,0.43621583
 SAPS_total,PANSS_positive,-0.543240007,0.528295477
 SAPS_summary,PANSS_positive,-0.63677632,0.918013477
@@ -16,6 +16,6 @@ SANS_summary,PANSS_negative,-0.362773491,0.883449346
 SAPS_delusions,PANSS_delusions,-0.848858652,1.292958128
 SAPS_disorganization,PANSS_disorganization,-0.245141343,0.480565371
 SAPS_hallucinations,PANSS_hallucinations,-0.772549618,0.941282443
-SANS_amotivation,PANSS_amotivation,-0.540919249,0.90656395
-SANS_expressivity,PANSS_expressivity,0.430298382,0.677408643
+SANS_expressivity,PANSS_amotivation,-0.540919249,0.90656395
+SANS_amotivation,PANSS_expressivity,0.430298382,0.677408643
 SANS_cognition,PANSS_cognition,0.491732554,0.329170234
