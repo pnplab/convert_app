@@ -47,7 +47,6 @@ SANS_expressivity = mean(SANS08, SANS13) <br/>
 SANS_amotivation = mean(SANS17, SANS22) <br/>
 SANS_cognition = SANS25 <br/>
 
-![](scores.png)
 
 ## Regression coefficients
 
@@ -73,7 +72,6 @@ SANS_expressivity	=	-0.541	+	0.907	*	PANSS_expressivity <br/>
 SANS_amotivation	=	0.430	+	0.677	*	PANSS_amotivation <br/>
 SANS_cognition		=	0.492	+	0.329	*	PANSS_cognition <br/>
 
-![](regressions.png)
 
 
 
