@@ -23,7 +23,7 @@ ui <- pageWithSidebar(
                           )
                ),
                selectInput("CORR1",
-                           label = "CONVERSION: Choose which scores to convert between scales",
+                           label = "1) Choose CONVERSION: Choose which scores to convert between scales",
                            multiple = TRUE,
                            choices = c("PANSS_positive => SAPS_total",
 					"PANSS_positive => SAPS_summary",
@@ -44,13 +44,14 @@ ui <- pageWithSidebar(
                                        	"SAPS_hallucinations => PANSS_hallucinations", 
                                        	"SANS_expressivity => PANSS_expressivity",
                                        	"SANS_amotivation => PANSS_amotivation", 
-                                       	"SANS_cognition => PANSS_cognition")),
+                                       "SANS_cognition => PANSS_cognition")),
+               HTML("<label class=\"control-label\">2) Check <em>Ignore first line</em> if your file contains header on the first line</label>"),
                checkboxInput("fl",
                              label = "Ignore First line",
                              value = FALSE
                ),
                fileInput("FIN",
-                         "INPUT: Select file (beware columns must be in the exact same order as given in CONVERSION)",
+                         HTML("3) INPUT: Select file (beware columns must be in the exact same order as given in CONVERSION, see <i>ORDER OF INPUT VARS</i> for exact order)"),
                          accept=c('text/csv',
                                   'text/comma-separated-values,text/plain',
                                   '.csv')
