@@ -12,12 +12,11 @@ plot_counter <- 0
 
 server <- function(input, output) {
 
-  ### Si on clique sur CloseApp on ferme.
+  
   observeEvent(input$close,
                stopApp())
 
-  ### output de l'ordre des variables.
-  ### Modifier lorsqu'on ajoute des 
+
   output$ORDER <- renderTable({
     ORD <- NULL
     if(length(input$CORR1) != 0){
