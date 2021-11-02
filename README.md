@@ -2,7 +2,7 @@
 
 # PANSS and SAPS/SANS (sub)scores converter
 
-This Shiny app (http://shiny.rstudio.com) converts scores between the Positive and Negative Syndrome Scale (PANSS; Kay et al., 1987, Schizophr Bull, 13: 261-276) and the Scale for the Assessment of Positive Symptoms or Scale for the Assessment of Negative Symptoms (SAPS/SANS; Andreasen, 1984, 1983, University of Iowa). Beyond conversions for global indices of positive and negative symptoms (van Erp et al., 2014, Schizophr Res, 152: 289-294), the app allows converting positive (delusions, disorganization, hallucinations) and negative (amotivation, expressivity, cognition) subscores between scales, as described in Grot et al, 2020, PsychArXiv (DOI).  
+This Shiny app (http://shiny.rstudio.com) converts scores between the Positive and Negative Syndrome Scale (PANSS; Kay et al., 1987, Schizophr Bull, 13: 261-276) and the Scale for the Assessment of Positive Symptoms or Scale for the Assessment of Negative Symptoms (SAPS/SANS; Andreasen, 1984, 1983, University of Iowa). Beyond conversions for global indices of positive and negative symptoms (van Erp et al., 2014, Schizophr Res, 152: 289-294), the app allows converting positive (delusions, disorganization, hallucinations) and negative (amotivation, expressivity, cognition) subscores between scales, as described in Grot et al, 2021, Psychiatry Res, 305:114199, doi: 10.1016/j.psychres.2021.114199 (preprint doi: 10.31234/osf.io/9nzd8).  
 
 Interactive conversion equations are available in the software R through the Shiny package: **_install.packages("shiny")_** and **_install.packages("shinyjs")_**. Scores conversion between scales will be performed using the following command line: **_shiny::runGitHub("pnplab/convert_app")_**.
 
@@ -42,7 +42,7 @@ SAPS_hallucinations = SAPS07 <br/>
 	
 **SANS Negative symptoms** <br/>
 SANS_total = mean(SANS01 - SANS07, SANS09 - SANS12, SANS14 - SANS16, SANS18 - SANS21, SANS23 - SANS24) <br/>
-SANS_summary = mean(SANS01, SANS13, SANS17, SANS22, SANS25) <br/>
+SANS_summary = mean(SANS08, SANS13, SANS17, SANS22, SANS25) <br/>
 SANS_expressivity = mean(SANS08, SANS13) <br/>
 SANS_amotivation = mean(SANS17, SANS22) <br/>
 SANS_cognition = SANS25 <br/>
